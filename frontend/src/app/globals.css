@@ -608,8 +608,10 @@ body {
 
 .chat-input-area {
   padding: var(--space-md) var(--space-lg) var(--space-lg);
+  padding-bottom: calc(var(--space-lg) + env(safe-area-inset-bottom, 0px));
   z-index: 10;
   position: relative;
+  flex-shrink: 0;
 }
 
 .chat-input-wrapper {
